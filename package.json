@@ -1,0 +1,15 @@
+{
+  "name": "friday-deployment-plan-demo",
+  "version": "1.0.0",
+  "description": "Companion demo: score a Friday deploy from diff size, coverage, rollback rehearsal, flags, and supervision — the inputs the meme ignores.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node app/server.js",
+    "test": "node --test \"test/*.test.mjs\"",
+    "check": "npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deploy Risk Simulator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <h1>Deploy Risk Simulator</h1>
+  <p class="sub">The meme's checklist vs. the boring-deploy contract. Score your Friday plan.</p>
+  <div class="panel">
+    <div class="presets" id="presets"></div>
+    <div class="ctl"><label>diff size <input type="number" id="diffLines" value="40000" min="0"> lines</label><small>the meme's +40,000</small></div>
+    <div class="ctl"><label><input type="checkbox" id="changedPathCovered"> changed path covered by tests</label><small>green CI ≠ the risky path is tested</small></div>
+    <div class="ctl"><label><input type="checkbox" id="rollbackRehearsed"> rollback rehearsed</label><small>not "redeploy old version" — run before</small></div>
+    <div class="ctl"><label><input type="checkbox" id="featureFlag"> behind a feature flag</label><small>deploy ≠ release</small></div>
+    <div class="ctl"><label><input type="checkbox" id="someoneWatching"> a human is watching</label><small>dashboards + alerts + awake</small></div>
+    <button class="go" id="go" style="margin-top:10px">Score this deploy</button>
+  </div>
+  <div class="panel" id="result" hidden>
+    <span class="score" id="score"></span>
+    <div class="verdict" id="verdict"></div>
+    <div id="drivers"></div>
+  </div>
+  <div class="panel" id="sim" hidden><h3 style="margin:0 0 8px;font-size:13px;color:var(--mut)">the meme, step by step</h3><div id="events"></div></div>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

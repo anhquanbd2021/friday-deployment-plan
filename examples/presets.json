@@ -1,0 +1,26 @@
+{
+  "meme": {
+    "label": "The meme plan",
+    "diffLines": 40000,
+    "changedPathCovered": false,
+    "rollbackRehearsed": false,
+    "featureFlag": false,
+    "someoneWatching": false
+  },
+  "friday": {
+    "label": "Friday, controls on",
+    "diffLines": 40000,
+    "changedPathCovered": true,
+    "rollbackRehearsed": true,
+    "featureFlag": true,
+    "someoneWatching": true
+  },
+  "boring": {
+    "label": "The boring deploy",
+    "diffLines": 180,
+    "changedPathCovered": true,
+    "rollbackRehearsed": true,
+    "featureFlag": true,
+    "someoneWatching": true
+  }
+}
